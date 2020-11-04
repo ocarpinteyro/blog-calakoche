@@ -1,6 +1,5 @@
 {
   "hosting": {
-    "site": "blog-ckche-stg-i86dhgs",
     "public": "public",
     "ignore": [
       "firebase.json",

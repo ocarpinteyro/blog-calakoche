@@ -15,6 +15,7 @@ export default function Index({ preview, allPosts }) {
         <Head>
           <title>{SITE_TITLE_TAB}</title>
         </Head>
+          <div className="section-space"></div>
         <Container>
           {heroPost && (
             <HeroPost
