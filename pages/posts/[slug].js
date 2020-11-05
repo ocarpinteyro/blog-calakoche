@@ -6,6 +6,7 @@ import PostBody from '../../components/post-body'
 import MoreStories from '../../components/more-stories'
 import PostHeader from '../../components/post-header'
 import SectionSeparator from '../../components/section-separator'
+import PostTitle from '../../components/post-title'
 import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import StructuredDataPost from '../../components/structured-data-post'
@@ -21,32 +22,36 @@ export default function Post({ post, morePosts, preview }) {
   return (
     <Layout preview={preview}>
       <Container>
-        <>
-          <article>
-            <Head>
-              <title>
-                {post.title} | {post.tag.name} | {SITE_TITLE}
-              </title>
-              <meta property="og:image" content={post.coverImage.url} />
-            </Head>
-            <div className="section-space"></div>
-            <PostHeader
-              title={post.title}
-              coverImage={post.coverImage}
-              date={post.date}
-              author={post.author}
-              excerpt={post.excerpt}
-              tag={post.tag}
-            />
-            <PostBody content={post.content} />
-          </article>
-          <SectionSeparator />
-          {morePosts && morePosts.length > 0 && (
-            <MoreStories posts={morePosts} />
-          )}
-        </>
+        {router.isFallback ? (
+          <PostTitle>Loading…</PostTitle>
+        ) : (
+          <>
+            <article>
+              <Head>
+                <title>
+                  {post.title} | {post.tag.name} | {SITE_TITLE}
+                </title>
+                <meta property="og:image" content={post.coverImage.url} />
+              </Head>
+              <div className="section-space"></div>
+              <PostHeader
+                title={post.title}
+                coverImage={post.coverImage}
+                date={post.date}
+                author={post.author}
+                excerpt={post.excerpt}
+                tag={post.tag}
+              />
+              <PostBody content={post.content} />
+            </article>
+            <SectionSeparator />
+            {morePosts && morePosts.length > 0 && (
+              <MoreStories posts={morePosts} />
+            )}
+            <StructuredDataPost post={post} />
+          </>
+        )}
       </Container>
-      <StructuredDataPost post={post} />
     </Layout>
   )
 }
