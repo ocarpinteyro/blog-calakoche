@@ -1,5 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import StructuredDataSite from '../components/structured-data-site'
+import FirebaseAnalytics from '../components/firebase-analytics'
 
 export default class MyDocument extends Document {
   render() {
@@ -23,9 +24,7 @@ export default class MyDocument extends Document {
           <script src="/assets/js/plugins/jasny-bootstrap.min.js" type="text/javascript"></script>
           <script async defer src="https://buttons.github.io/buttons.js"></script>
           <script src="/assets/js/material-kit.js?v=2.2.0" type="text/javascript"></script>
-          <script src="/__/firebase/8.0.0/firebase-app.js"></script>
-          <script src="/__/firebase/8.0.0/firebase-analytics.js"></script>
-          <script src="/__/firebase/init.js"></script>
+          <FirebaseAnalytics />
           <StructuredDataSite />
         </body>
       </Html>
