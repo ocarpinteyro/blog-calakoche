@@ -5,6 +5,12 @@
       "config": {
         "label": "name"
       }
+    },
+    "slug": {
+      "type": "Text",
+      "config": {
+        "label": "name"
+      }
     }
   }
 }

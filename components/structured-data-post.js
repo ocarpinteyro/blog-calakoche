@@ -19,11 +19,11 @@ export default function StructuredData({ post }) {
             "headline":"${post.title}",
             "thumbnailUrl":"${post.coverImage.url}",
             "image":"${post.coverImage.url}",
-            "url":"${SITE_DOMAIN}/post/${post.slug}",
-            "mainEntityOfPage":"${SITE_DOMAIN}/post/${post.slug}",
+            "url":"${SITE_DOMAIN}/${post.tag.slug}/${post.slug}",
+            "mainEntityOfPage":"${SITE_DOMAIN}/${post.tag.slug}/${post.slug}",
             "publisher":{
               "@type":"Organization",
-              "name":"quidbe.app",
+              "name":"blog.calakoche.com",
               "logo":{
                 "@type":"ImageObject",
                 "url":"${SITE_LOGO}",

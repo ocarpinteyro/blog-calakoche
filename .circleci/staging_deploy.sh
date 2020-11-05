@@ -2,7 +2,7 @@
 echo -e "\n⚡️ Project Setup"
 
 rm .env.production
-mv .env.development .env.production
+mv .env .env.production
 cat .env.production
 yarn install
 

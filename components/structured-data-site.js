@@ -15,9 +15,10 @@ export default function StructuredDataSite() {
             "name": "${SITE_TITLE}",
             "url": "${SITE_DOMAIN}",
             "sameAs": [
-              "https://www.facebook.com/quidbeapp", 
-              "https://twitter.com/QuidbeApp", 
-              "https://www.instagram.com/quidbeapp/"
+              "https://www.instagram.com/calakoche/", 
+              "https://fb.com/calakoche/", 
+              "https://www.twitter.com/calakoche/",
+              "https://www.youtube.com/channel/UCLOLvdrbCpGDc3FKpLPK6LA/"
             ]
           }
           `,

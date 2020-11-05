@@ -7,7 +7,7 @@ export default function Header() {
       <div className="container">
         <div className="navbar-translate">
           <Link as={`/`} href="/">
-            <a className="navbar-brand">Quidbe.</a>
+            <a className="navbar-brand">Calakoche.Tu.Blog.</a>
           </Link>
         </div>
       </div>

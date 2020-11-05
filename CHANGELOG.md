@@ -13,5 +13,6 @@
 * [X] Agregar TITLE TAB
 * [ ] Agregar `sitemap`
 * [ ] Agregar AdSense scripts
-* [ ] Agregar CircleCI
+* [X] Agregar CircleCI
 * [ ] Agregar Banner de Instalación de App?
+* [X] Agregar Firebase
