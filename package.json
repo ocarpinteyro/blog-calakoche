@@ -1,8 +1,10 @@
 {
-  "name": "cms-contentful",
+  "name": "blog-calakoche",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
     "dev": "next",
+    "prod": "export NODE_ENV=production; next build && next start",
     "build": "next build",
     "export": "next export",
     "start": "next start",

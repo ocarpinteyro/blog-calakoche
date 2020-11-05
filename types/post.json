@@ -42,6 +42,14 @@
         "label": "author"
       }
     },
+    "tag": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["tag"],
+        "label": "tag"
+      }
+    },
     "uid": {
       "type": "UID",
       "config": {

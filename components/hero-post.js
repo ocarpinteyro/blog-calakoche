@@ -5,9 +5,10 @@ export default function HeroPost({
   coverImage,
   excerpt,
   slug,
+  tag,
 }) {
   return (
-    <div className="blogs-4">
+    <div className="text-center">
       <div className="col-md-8 ml-auto mr-auto">
         <div className="card card-plain card-blog">
           <div className="card-header card-header-image">
@@ -18,7 +19,7 @@ export default function HeroPost({
             </Link>
           </div>
           <div className="card-body">
-            <h6 className="card-category text-info">Fashion</h6>
+            <h6 className="card-category text-info">{tag.name}</h6>
             <h3 className="card-title">
             <Link as={`/posts/${slug}`} href="/posts/[slug]"><a>{title}</a></Link>
             </h3>

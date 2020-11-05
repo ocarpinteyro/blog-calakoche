@@ -8,6 +8,7 @@ export default function PostPreview({
   excerpt,
   author,
   slug,
+  tag,
 }) {
   return (
     <div className="card card-plain card-blog">
@@ -26,13 +27,13 @@ export default function PostPreview({
           </div>
         </div>
         <div className="col-md-8">
-          <h6 className="card-category text-info">Enterprise</h6>
+          <h6 className="card-category text-info">{tag.name}</h6>
           <h3 className="card-title">
           <Link as={`/posts/${slug}`} href="/posts/[slug]"><a>{title}</a></Link>
           </h3>
           <p className="card-description">
           {excerpt}
-          <Link as={`/posts/${slug}`} href="/posts/[slug]"> <a>Leer más</a> </Link>
+          <Link as={`/posts/${slug}`} href="/posts/[slug]"><a>Leer más</a></Link>
           </p>
           <p className="author">
               por <b>{author.name}</b>, <Date dateString={date} />
