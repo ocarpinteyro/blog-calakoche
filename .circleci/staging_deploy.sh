@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 echo -e "\n⚡️ Project Setup"
 
-rm .env.production
-mv .env .env.production
-cat .env.production
+cat .env
+
 yarn install
 
 echo -e "\n⚡️ Building Project"
