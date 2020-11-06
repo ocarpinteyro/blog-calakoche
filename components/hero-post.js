@@ -14,7 +14,7 @@ export default function HeroPost({
             <div className="card-header card-header-image">
               <Link as={`/posts/${slug}`} href="/posts/[slug]">
                 <a>
-                  <img className="img img-raised" src={coverImage.url} />
+                  <img className="img img-raised" src={`https:${coverImage.url}`} />
                 </a>
               </Link>
             </div>

@@ -4,7 +4,6 @@ import {SITE_TWITTER_OFICIAL, SITE_TITLE} from '../lib/constants'
 export default function Meta() {
   return (
     <Head>
-
       <meta charSet="utf-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
