@@ -10,7 +10,7 @@ import PostTitle from '../../components/post-title'
 import Layout from '../../components/layout'
 import { getAllPostsWithSlug, getPostAndMorePosts } from '../../lib/api'
 import StructuredDataPost from '../../components/structured-data-post'
-import { SITE_TITLE, SITE_DOMAIN } from '../../lib/constants'
+import MetasArticle from '../../components/meta-articles'
 
 export default function Post({ post, morePosts, preview }) {
   const router = useRouter()
@@ -27,28 +27,7 @@ export default function Post({ post, morePosts, preview }) {
         ) : (
           <>
             <article>
-              <Head>
-                <title>
-                  {post.title} | {post.tag.name} | {SITE_TITLE}
-                </title>
-                <meta property="og:image" content={post.coverImage.url} />
-                <meta name="author" content={post.author} />
-                <meta name="description" content={post.excerpt} />
-                <meta itemProp="description" content={post.excerpt} />
-                <meta property="og:description" content={post.excerpt} />
-                <meta property="twitter:description" content={post.excerpt} />
-                <meta property="twitter:image:alt" content={post.title} />
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content={post.title} />
-                <meta property="og:locale" content="es_MX" />
-                <meta property="og:image:alt" content={post.title} />
-                <meta property="og:title" content={post.title} />
-                <meta property="og:type" content="article" />
-                <meta property="og:url" content="https://www.calakoche.com" />
-                <meta property="twitter:image" content={post.coverImage.url} />
-                <meta property="og:image" content={post.coverImage.url} />
-                <link rel="canonical" href={`${SITE_DOMAIN}/posts/${post.slug}`} />
-              </Head>
+              <MetasArticle post={post} />
               <div className="section-space"></div>
               <PostHeader
                 title={post.title}
