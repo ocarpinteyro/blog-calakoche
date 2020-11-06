@@ -4,7 +4,7 @@ import HeroPost from '../components/hero-post'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
 import Head from 'next/head'
-import {SITE_TITLE_TAB} from '../lib/constants'
+import {SITE_DOMAIN, SITE_TITLE_TAB, SITE_AUTHOR, SITE_DESCRIPTION} from '../lib/constants'
 
 export default function Index({ preview, allPosts }) {
   const heroPost = allPosts[0]
@@ -14,6 +14,25 @@ export default function Index({ preview, allPosts }) {
       <Layout preview={preview}>
         <Head>
           <title>{SITE_TITLE_TAB}</title>
+          <meta name="author" content={SITE_AUTHOR} />
+          <meta name="description" content={SITE_DESCRIPTION} />
+          <meta itemProp="description" content={SITE_DESCRIPTION} />
+          <meta property="og:description" content={SITE_DESCRIPTION} />
+          <meta property="twitter:description" content={SITE_DESCRIPTION} />
+          <meta property="twitter:image:alt" content={SITE_TITLE_TAB} />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:title" content={SITE_TITLE_TAB} />
+          <meta property="og:locale" content="es_MX" />
+          <meta property="og:image:alt" content={SITE_TITLE_TAB} />
+          <meta property="og:site_name" content={SITE_TITLE_TAB} />
+          <meta property="og:title" content={SITE_TITLE_TAB} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://www.calakoche.com" />
+          <meta property="twitter:image" content="https://calakoche.com/images/social_share.jpg" />
+          <meta property="og:image" content="https://calakoche.com/images/social_share.jpg" />
+          <meta property="og:image:width" content="400" />
+          <meta property="og:image:height" content="400" />
+          <link rel="canonical" href={SITE_DOMAIN} />
         </Head>
         <div className="section-space"></div>
         <Container>
