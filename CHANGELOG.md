@@ -1,9 +1,9 @@
 # CHANGELOG
 
-* [ ] Agregar `canonical`
-* [ ] Agregar Open Graph
+* [X] Agregar `canonical`
+* [X] Agregar Open Graph
 * [ ] Agregar AMP Google
-* [ ] Agregar SHARES
+* [ ] Agregar SHARES al diseño
 * [ ] Agregar FB Pixel
 * [ ] Agregar GTM
 * [ ] Agregar GA
@@ -16,6 +16,10 @@
 * [X] Agregar CircleCI
 * [ ] Agregar Banner de Instalación de App?
 * [X] Agregar Firebase
-* [ ] Mejorar el diseño del header
-* [ ] Agregar ligas al footer
+* [X] Mejorar el diseño del header
+* [X] Agregar ligas al footer
 * [ ] Quitar scripts del tema
+* [X] Fuente de la foto
+* [X] Agregar Fecha de Modificación en Structured Data
+* [X] Agregar Fecha de Publicación en Structured Data
+* [X] Agregar Fecha de Publicación en Frontend
