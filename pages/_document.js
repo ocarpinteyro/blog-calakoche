@@ -7,6 +7,20 @@ export default class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
+                    <link href="https://www.google-analytics.com" rel="preconnect" />
+                    <link href="https://www.google-analytics.com" rel="dns-prefetch" />
+                    <link href="https://fonts.googleapis.com" rel="preconnect" />
+                    <link href="https://fonts.googleapis.com" rel="dns-prefetch" />
+                    <link href="https://maxcdn.bootstrapcdn.com" rel="preconnect" />
+                    <link href="https://maxcdn.bootstrapcdn.com" rel="dns-prefetch" />
+                    <link href="https://connect.facebook.net" rel="preconnect" />
+                    <link href="https://connect.facebook.net" rel="dns-prefetch" />
+                    <link href="https://www.facebook.com" rel="preconnect" />
+                    <link href="https://www.facebook.com" rel="dns-prefetch" />
+                    <link href="https://www.gstatic.com" rel="preconnect" />
+                    <link href="https://www.gstatic.com" rel="dns-prefetch" />
+                    <link href="https://www.googletagmanager.com" rel="preconnect" />
+                    <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
                     <link
                         rel="stylesheet"
                         type="text/css"
@@ -17,11 +31,6 @@ export default class MyDocument extends Document {
                         href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
                     ></link>
                     <link href="/assets/css/material-kit.css?v=2.2.0" rel="stylesheet" />
-                    <link
-                        rel="preconnect dns-prefetch"
-                        href="https://www.google-analytics.com"
-                        crossOrigin="true"
-                    />
                     <script
                         async
                         src="https://www.googletagmanager.com/gtag/js?id=G-7L8D68ZK4J"
@@ -69,25 +78,6 @@ export default class MyDocument extends Document {
                         src="/assets/js/core/bootstrap-material-design.min.js"
                         type="text/javascript"
                     ></script>
-                    <script src="/assets/js/plugins/moment.min.js"></script>
-                    <script
-                        src="/assets/js/plugins/bootstrap-datetimepicker.js"
-                        type="text/javascript"
-                    ></script>
-                    <script
-                        src="/assets/js/plugins/nouislider.min.js"
-                        type="text/javascript"
-                    ></script>
-                    <script src="/assets/js/plugins/bootstrap-tagsinput.js"></script>
-                    <script
-                        src="/assets/js/plugins/bootstrap-selectpicker.js"
-                        type="text/javascript"
-                    ></script>
-                    <script
-                        src="/assets/js/plugins/jasny-bootstrap.min.js"
-                        type="text/javascript"
-                    ></script>
-                    <script async defer src="https://buttons.github.io/buttons.js"></script>
                     <script
                         src="/assets/js/material-kit.js?v=2.2.0"
                         type="text/javascript"

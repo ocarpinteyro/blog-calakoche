@@ -18,7 +18,7 @@ client
             if (entry.fields) {
                 sitemapEntries += `
                         <url>
-                            <loc>${`https://calakoche.com/post/${entry.fields.slug}`}</loc>
+                            <loc>${`https://calakoche.com/posts/${entry.fields.slug}`}</loc>
                             <lastmod>${dateValid[0]}</lastmod>
                         </url>
                     `;

@@ -23,6 +23,8 @@
 * [X] Agregar Fecha de Modificación en Structured Data
 * [X] Agregar Fecha de Publicación en Structured Data
 * [X] Agregar Fecha de Publicación en Frontend
+* [X] Agregar Whatsapp Share
+* [X] Mejoras de Prefetch y Preconnect
 
 ## OUT OF SCOPE
 

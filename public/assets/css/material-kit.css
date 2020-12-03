@@ -8354,6 +8354,9 @@ label {
 .sharing-area .btn-github {
   background-color: #333333; }
 
+.sharing-area .btn-whatsapp {
+  background-color: #25d366; }
+
 #navbar .navbar {
   border-radius: 0; }
 
@@ -12304,6 +12307,57 @@ blockquote {
     .btn.btn-twitter.btn-link:hover, .btn.btn-twitter.btn-link:focus, .btn.btn-twitter.btn-link:active {
       background-color: transparent;
       color: #55acee; }
+
+      .btn.btn-whatsapp {
+        color: #ffffff;
+        background-color: #25d366;
+        border-color: #25d366;
+        box-shadow: 0 2px 2px 0 rgba(37, 211, 102, 0.14), 0 3px 1px -2px rgba(37, 211, 102, 0.2), 0 1px 5px 0 rgba(37, 211, 102, 0.12); }
+        .btn.btn-whatsapp:hover {
+          color: #ffffff;
+          background-color: #25c966;
+          border-color: #25c966; }
+        .btn.btn-whatsapp:focus, .btn.btn-whatsapp.focus, .btn.btn-whatsapp:hover {
+          color: #ffffff;
+          background-color: #25c966;
+          border-color: #25c966; }
+        .btn.btn-whatsapp:active, .btn.btn-whatsapp.active,
+        .open > .btn.btn-whatsapp.dropdown-toggle,
+        .show > .btn.btn-whatsapp.dropdown-toggle {
+          color: #ffffff;
+          background-color: #25c966;
+          border-color: #25c966;
+          box-shadow: 0 2px 2px 0 rgba(37, 211, 102, 0.14), 0 3px 1px -2px rgba(37, 211, 102, 0.2), 0 1px 5px 0 rgba(37, 211, 102, 0.12); }
+          .btn.btn-whatsapp:active:hover, .btn.btn-whatsapp:active:focus, .btn.btn-whatsapp:active.focus, .btn.btn-whatsapp.active:hover, .btn.btn-whatsapp.active:focus, .btn.btn-whatsapp.active.focus,
+          .open > .btn.btn-whatsapp.dropdown-toggle:hover,
+          .open > .btn.btn-whatsapp.dropdown-toggle:focus,
+          .open > .btn.btn-whatsapp.dropdown-toggle.focus,
+          .show > .btn.btn-whatsapp.dropdown-toggle:hover,
+          .show > .btn.btn-whatsapp.dropdown-toggle:focus,
+          .show > .btn.btn-whatsapp.dropdown-toggle.focus {
+            color: #ffffff;
+            background-color: #25c966;
+            border-color: #126db2; }
+        .open > .btn.btn-whatsapp.dropdown-toggle.bmd-btn-icon {
+          color: inherit;
+          background-color: #25d366; }
+          .open > .btn.btn-whatsapp.dropdown-toggle.bmd-btn-icon:hover {
+            background-color: #25c966; }
+        .btn.btn-whatsapp.disabled:focus, .btn.btn-whatsapp.disabled.focus, .btn.btn-whatsapp:disabled:focus, .btn.btn-whatsapp:disabled.focus {
+          background-color: #25d366;
+          border-color: #25d366; }
+        .btn.btn-whatsapp.disabled:hover, .btn.btn-whatsapp:disabled:hover {
+          background-color: #25d366;
+          border-color: #25d366; }
+        .btn.btn-whatsapp:focus, .btn.btn-whatsapp:active, .btn.btn-whatsapp:hover {
+          box-shadow: 0 14px 26px -12px rgba(37, 211, 102, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(37, 211, 102, 0.2); }
+        .btn.btn-whatsapp.btn-link {
+          background-color: transparent;
+          color: #25d366;
+          box-shadow: none; }
+          .btn.btn-whatsapp.btn-link:hover, .btn.btn-whatsapp.btn-link:focus, .btn.btn-whatsapp.btn-link:active {
+            background-color: transparent;
+            color: #25d366; }
 
 .btn.btn-pinterest {
   color: #ffffff;
