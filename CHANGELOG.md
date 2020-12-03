@@ -10,7 +10,7 @@
 * [X] Agregar GA
 * [ ] Agregar Mensaje de Cookies
 * [X] Agregar sección de Politica de Privacidad
-* [ ] Agregar y tunear el Error 404
+* [X] Agregar y tunear el Error 404
 * [X] Agregar TITLE TAB
 * [X] Agregar `sitemap`
 * [ ] Agregar AdSense scripts
@@ -18,7 +18,7 @@
 * [X] Agregar Firebase
 * [X] Mejorar el diseño del header
 * [X] Agregar ligas al footer
-* [ ] Quitar scripts del tema
+* [X] Quitar scripts del tema
 * [X] Fuente de la foto
 * [X] Agregar Fecha de Modificación en Structured Data
 * [X] Agregar Fecha de Publicación en Structured Data
