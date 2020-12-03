@@ -21,6 +21,7 @@ export default class MyDocument extends Document {
                     <link href="https://www.gstatic.com" rel="dns-prefetch" />
                     <link href="https://www.googletagmanager.com" rel="preconnect" />
                     <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+                    <meta property="og:locale" content="es_MX" />
                     <link
                         rel="stylesheet"
                         type="text/css"

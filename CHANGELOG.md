@@ -9,7 +9,7 @@
 * [X] Agregar GTM
 * [X] Agregar GA
 * [ ] Agregar Mensaje de Cookies
-* [ ] Agregar sección de Politica de Privacidad
+* [X] Agregar sección de Politica de Privacidad
 * [ ] Agregar y tunear el Error 404
 * [X] Agregar TITLE TAB
 * [X] Agregar `sitemap`

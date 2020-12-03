@@ -15,13 +15,13 @@
     "classnames": "2.2.6",
     "contentful": "7.14.4",
     "date-fns": "2.10.0",
-    "moment": "^2.29.1",
-    "next": "9.3.6",
+    "moment": "2.29.1",
+    "next": "9.5.5",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
   },
   "devDependencies": {
-    "contentful-import": "^7.7.12",
+    "contentful-import": "7.7.12",
     "dotenv": "8.2.0"
   }
 }

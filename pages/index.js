@@ -22,12 +22,11 @@ export default function Index({ preview, allPosts }) {
           <meta property="twitter:image:alt" content={SITE_TITLE_TAB} />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:title" content={SITE_TITLE_TAB} />
-          <meta property="og:locale" content="es_MX" />
           <meta property="og:image:alt" content={SITE_TITLE_TAB} />
           <meta property="og:site_name" content={SITE_TITLE_TAB} />
           <meta property="og:title" content={SITE_TITLE_TAB} />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://www.calakoche.com" />
+          <meta property="og:url" content={SITE_DOMAIN} />
           <meta property="twitter:image" content="https://calakoche.com/images/social_share.jpg" />
           <meta property="og:image" content="https://calakoche.com/images/social_share.jpg" />
           <meta property="og:image:width" content="400" />
