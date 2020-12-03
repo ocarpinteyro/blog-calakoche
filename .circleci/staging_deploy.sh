@@ -15,6 +15,8 @@ rm robots_prod.txt
 ls -lsa
 cd ..
 
+node sitemap.js
+
 echo -e "\n⚡️ Deploying Project into Firebase"
 
 npm install firebase-tools
