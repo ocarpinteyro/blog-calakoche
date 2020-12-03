@@ -1,21 +1,30 @@
 # CHANGELOG
 
-* [ ] Agregar `canonical`
-* [ ] Agregar Open Graph
-* [ ] Agregar AMP Google
-* [ ] Agregar SHARES
-* [ ] Agregar FB Pixel
-* [ ] Agregar GTM
-* [ ] Agregar GA
+## MVP
+
+* [X] Agregar `canonical`
+* [X] Agregar Open Graph
+* [X] Agregar SHARES al diseño
+* [X] Agregar FB Pixel
+* [X] Agregar GTM
+* [X] Agregar GA
 * [ ] Agregar Mensaje de Cookies
 * [ ] Agregar sección de Politica de Privacidad
 * [ ] Agregar y tunear el Error 404
 * [X] Agregar TITLE TAB
-* [ ] Agregar `sitemap`
+* [X] Agregar `sitemap`
 * [ ] Agregar AdSense scripts
 * [X] Agregar CircleCI
-* [ ] Agregar Banner de Instalación de App?
 * [X] Agregar Firebase
-* [ ] Mejorar el diseño del header
-* [ ] Agregar ligas al footer
+* [X] Mejorar el diseño del header
+* [X] Agregar ligas al footer
 * [ ] Quitar scripts del tema
+* [X] Fuente de la foto
+* [X] Agregar Fecha de Modificación en Structured Data
+* [X] Agregar Fecha de Publicación en Structured Data
+* [X] Agregar Fecha de Publicación en Frontend
+
+## OUT OF SCOPE
+
+* [ ] Agregar AMP Google
+* [ ] Agregar Banner de Instalación de App Quidbe

@@ -3,6 +3,7 @@ import Head from 'next/head'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
 import PostBody from '../../components/post-body'
+import PostShare from '../../components/post-share'
 import MoreStories from '../../components/more-stories'
 import PostHeader from '../../components/post-header'
 import SectionSeparator from '../../components/section-separator'
@@ -32,12 +33,15 @@ export default function Post({ post, morePosts, preview }) {
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
+                imageCoverSource={post.imageCoverSource}
                 date={post.date}
+                dateUpdate={post.dateUpdate}
                 author={post.author}
                 excerpt={post.excerpt}
                 tag={post.tag}
               />
               <PostBody content={post.content} />
+              <PostShare post={post} />
             </article>
             <SectionSeparator />
             {morePosts && morePosts.length > 0 && (

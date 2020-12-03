@@ -1,4 +1,3 @@
-import Container from './container'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -13,9 +12,7 @@ export default function Footer() {
             </Link>
           </li>
           <li>
-            <Link as={`/`} href="/">
-              <a title="Ir a Quidbe">Quidbe</a>
-            </Link>
+              <a href="https://quidbe.app" className="nav-link" target="_blank" rel="noreferrer" aria-label="Ir a Quidbe">Quidbe</a>
           </li>
           <li>
             <Link as={`/aviso-de-privacidad/`} href="/">

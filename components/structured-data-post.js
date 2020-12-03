@@ -1,4 +1,4 @@
-import { SITE_LOGO, SITE_DOMAIN, SITE_DESCRIPTION } from '../lib/constants'
+import { SITE_LOGO, SITE_DOMAIN } from '../lib/constants'
 
 export default function StructuredData({ post }) {
   return (
@@ -13,8 +13,8 @@ export default function StructuredData({ post }) {
             "author":["${post.author.name}"],
             "creator":["${post.author.name}"],
             "articleSection":"${post.tag.name}",
-            "datePublished":"2020-11-03T08:54:54-06:00",
-            "dateModified":"2020-11-03T15:04:29-06:00",
+            "datePublished":"${post.date}",
+            "dateModified":"${post.dateUpdate}",
             "description":"${post.excerpt}",
             "headline":"${post.title}",
             "thumbnailUrl":"https:${post.coverImage.url}",
@@ -23,7 +23,7 @@ export default function StructuredData({ post }) {
             "mainEntityOfPage":"${SITE_DOMAIN}/post/${post.slug}",
             "publisher":{
               "@type":"Organization",
-              "name":"blog.calakoche.com",
+              "name":"calakoche.com",
               "logo":{
                 "@type":"ImageObject",
                 "url":"${SITE_LOGO}",
