@@ -15,7 +15,7 @@ export default function Footer() {
               <a href="https://quidbe.app" className="nav-link" target="_blank" rel="noreferrer" aria-label="Ir a Quidbe">Quidbe</a>
           </li>
           <li>
-            <Link as={`/aviso-de-privacidad/`} href="/">
+            <Link href="/aviso-de-privacidad">
               <a title="Aviso de privacidad">Aviso de privacidad</a>
             </Link>
           </li>
