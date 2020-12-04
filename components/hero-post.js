@@ -19,13 +19,13 @@ export default function HeroPost({
               </Link>
             </div>
           <div className="card-body">
-            <h6 className="card-category text-info">{tag.name}</h6>
+            <span className="h6 card-category text-info">{tag.name}</span>
             <h3 className="card-title">
             <Link as={`/posts/${slug}`} href="/posts/[slug]"><a aria-label={title} title={title}>{title}</a></Link>
             </h3>
-            <h5 className="card-description">
+            <h4 className="h5 card-description">
               {excerpt}
-            </h5>
+            </h4>
             <Link as={`/posts/${slug}`} href="/posts/[slug]">
               <a className="btn btn-primary btn-round" aria-label="Leer más" title="Leer más">Leer más</a>
             </Link>

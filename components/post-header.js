@@ -40,9 +40,9 @@ export default function PostHeader({
                 style={{ backgroundImage: `url(https:${coverImage.url})` }}
             >
                 <div className="card-body">
-                    <h6 className="card-category text-info">{tag.name}</h6>
+                    <span className="h6 card-category text-info">{tag.name}</span>
                     <h1 className="card-title">{title}</h1>
-                    <h4 className="card-description card-description-no-opacity">{excerpt}</h4>
+                    <h2 className="h4 card-description card-description-no-opacity">{excerpt}</h2>
 
                     <span className="card-image-source card-description-no-opacity">
                         {PostFormatDate(dateUpdate)}
