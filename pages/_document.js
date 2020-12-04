@@ -67,6 +67,7 @@ export default class MyDocument extends Document {
                             height="1"
                             width="1"
                             src="https://www.facebook.com/tr?id=392510324964684&ev=PageView&noscript=1"
+                            alt="FBP"
                         />
                     </noscript>
                 </Head>

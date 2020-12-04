@@ -14,9 +14,17 @@ export default function Error() {
             <Container>
                 <div className="text-center">
                     <h1 className="title">Página no encontrada</h1>
-                    <p className="text-muted mb-5">Lo sentimos, la página que buscas no se encuentra.</p>
+                    <p className="text-muted mb-5">
+                        Lo sentimos, la página que buscas no se encuentra.
+                    </p>
                     <Link href="/">
-                        <a className="btn btn-primary btn-round">Regresar al inicio</a>
+                        <a
+                            className="btn btn-primary btn-round"
+                            aria-label="Regresar al inicio"
+                            title="Regresar al inicio"
+                        >
+                            Regresar al inicio
+                        </a>
                     </Link>
                 </div>
             </Container>
