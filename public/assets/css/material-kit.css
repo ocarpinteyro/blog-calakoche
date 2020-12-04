@@ -3866,6 +3866,11 @@ tbody.collapse.show {
     color: #18381a; }
 
 .alert-info {
+  bottom:0;
+  position:fixed;
+  z-index:11;
+  width: 100%;
+  margin-bottom: 0;
   color: #00626e;
   background-color: #ccf2f6;
   border-color: #b8ecf3; }
