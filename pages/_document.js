@@ -19,8 +19,6 @@ export default class MyDocument extends Document {
                     <link href="https://www.facebook.com" rel="dns-prefetch" />
                     <link href="https://www.gstatic.com" rel="preconnect" />
                     <link href="https://www.gstatic.com" rel="dns-prefetch" />
-                    <link href="https://www.googletagmanager.com" rel="preconnect" />
-                    <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
                     <meta property="og:locale" content="es_MX" />
                     <link
                         rel="stylesheet"
@@ -32,20 +30,6 @@ export default class MyDocument extends Document {
                         href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
                     ></link>
                     <link href="/assets/css/material-kit.min.css" rel="stylesheet" />
-                    <script
-                        async
-                        src="https://www.googletagmanager.com/gtag/js?id=G-7L8D68ZK4J"
-                    ></script>
-                    <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                        window.dataLayer = window.dataLayer || [];
-                        function gtag(){dataLayer.push(arguments);}
-                        gtag('js', new Date());
-                        gtag('config', 'G-7L8D68ZK4J');
-                    `,
-                        }}
-                    />
                     <script
                         dangerouslySetInnerHTML={{
                             __html: `
@@ -67,6 +51,7 @@ export default class MyDocument extends Document {
                             height="1"
                             width="1"
                             src="https://www.facebook.com/tr?id=392510324964684&ev=PageView&noscript=1"
+                            alt="FBP"
                         />
                     </noscript>
                 </Head>
@@ -80,7 +65,7 @@ export default class MyDocument extends Document {
                         type="text/javascript"
                     ></script>
                     <script
-                        src="/assets/js/material-kit.js?v=2.2.0"
+                        src="/assets/js/material-kit.min.js?v=2.2.0"
                         type="text/javascript"
                     ></script>
                     <FirebaseAnalytics />

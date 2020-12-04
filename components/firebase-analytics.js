@@ -1,8 +1,8 @@
 export default function FirebaseAnalytics() {
     return (
         <div>
-            <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
-            <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+            <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-analytics.js"></script>
             <script
                 dangerouslySetInnerHTML={{
                     __html: `var firebaseConfig = {apiKey:"${process.env.apiKey}",${

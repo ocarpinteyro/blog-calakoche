@@ -21,7 +21,7 @@ export default function HeroStage({
           <div className="row">
               <div className="col-md-6">
                 <div className="phone-container">
-                  <img src="./assets/img/sections/iphone.png" />
+                  <img src="./assets/img/sections/iphone.png" alt="iPhone" />
                 </div>
               </div>
               <div className="col-md-6">

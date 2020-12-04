@@ -594,7 +594,7 @@ h1, .h1 {
   font-size: 2.5rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
 
 h3, .h3 {
   font-size: 1.75rem; }
@@ -11156,9 +11156,9 @@ h2.title {
 .description,
 .card-description,
 .footer-big p {
-  color: #999; }
+  color: #555; }
 .card-image-source {
-  color: #999; 
+  color: #555; 
   font-size: .750rem;
 }
 .text-warning {
@@ -16554,5 +16554,3 @@ select.selectpicker {
       text-indent: -9999px;
       overflow: hidden;
   }
-
-/*# sourceMappingURL=material-kit.css.map */
