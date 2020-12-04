@@ -33,12 +33,6 @@ export default function Meta() {
       <meta property="fb:pages" content="951620488359371" />
       <meta property="twitter:site" content={SITE_TWITTER_OFICIAL} />
       <meta property="og:site_name" content={SITE_TITLE} />
-      <link href="https://www.googletagmanager.com" rel="preconnect" />
-      <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
-      <link href="https://connect.facebook.net" rel="preconnect" />
-      <link href="https://connect.facebook.net" rel="dns-prefetch" />
-      <link href="https://www.gstatic.com" rel="preconnect" />
-      <link href="https://www.gstatic.com" rel="dns-prefetch" />
       <link rel="manifest" href="/favicon/site.webmanifest" />
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <meta name="msapplication-TileColor" content="#000000" />

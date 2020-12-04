@@ -1,7 +1,9 @@
 import { format } from 'date-fns'
 
-export default ({ dateString }) => (
+const getTimeTag = ({ dateString }) => (
   <time dateTime={dateString}>
     {format(new Date(dateString), 'LLLL	d, yyyy')}
   </time>
 )
+
+export default getTimeTag;
