@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
                         rel="stylesheet"
                         href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
                     ></link>
-                    <link href="/assets/css/material-kit.css?v=2.2.0" rel="stylesheet" />
+                    <link href="/assets/css/material-kit.min.css" rel="stylesheet" />
                     <script
                         async
                         src="https://www.googletagmanager.com/gtag/js?id=G-7L8D68ZK4J"
