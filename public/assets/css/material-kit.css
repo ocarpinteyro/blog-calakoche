@@ -12215,6 +12215,7 @@ blockquote {
   color: #ffffff;
   background-color: #3b5998;
   border-color: #3b5998;
+  padding: 12px 20px;
   box-shadow: 0 2px 2px 0 rgba(59, 89, 152, 0.14), 0 3px 1px -2px rgba(59, 89, 152, 0.2), 0 1px 5px 0 rgba(59, 89, 152, 0.12); }
   .btn.btn-facebook:hover {
     color: #ffffff;
@@ -12266,6 +12267,7 @@ blockquote {
   color: #ffffff;
   background-color: #55acee;
   border-color: #55acee;
+  padding: 12px 20px;
   box-shadow: 0 2px 2px 0 rgba(85, 172, 238, 0.14), 0 3px 1px -2px rgba(85, 172, 238, 0.2), 0 1px 5px 0 rgba(85, 172, 238, 0.12); }
   .btn.btn-twitter:hover {
     color: #ffffff;
@@ -12317,6 +12319,7 @@ blockquote {
         color: #ffffff;
         background-color: #25d366;
         border-color: #25d366;
+        padding: 12px 20px;
         box-shadow: 0 2px 2px 0 rgba(37, 211, 102, 0.14), 0 3px 1px -2px rgba(37, 211, 102, 0.2), 0 1px 5px 0 rgba(37, 211, 102, 0.12); }
         .btn.btn-whatsapp:hover {
           color: #ffffff;
@@ -12363,6 +12366,12 @@ blockquote {
           .btn.btn-whatsapp.btn-link:hover, .btn.btn-whatsapp.btn-link:focus, .btn.btn-whatsapp.btn-link:active {
             background-color: transparent;
             color: #25d366; }
+
+            @media (min-width: 769px) {
+              .btn.btn-whatsapp {
+                display: none;
+              }
+            }
 
 .btn.btn-pinterest {
   color: #ffffff;
@@ -15609,6 +15618,9 @@ select.selectpicker {
       font-size: 1rem; }
     .blog-post .section-blog-info .card-profile .btn {
       margin-top: 25px; }
+.share-btns {
+  padding: 5px 0 20px 0;
+}
 
 .blog-post .section-comments .title {
   margin-bottom: 30px; }

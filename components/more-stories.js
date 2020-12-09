@@ -1,6 +1,4 @@
-import PostPreview from '../components/post-preview'
 import HeroPost from '../components/hero-post'
-import date from './date'
 
 export default function MoreStories({ posts }) {
   return (
@@ -13,7 +11,7 @@ export default function MoreStories({ posts }) {
         slug={post.slug}
         excerpt={post.excerpt}
         tag={post.tag}
-        key={new Date()}
+        key={post.slug}
       />
     ))
   )

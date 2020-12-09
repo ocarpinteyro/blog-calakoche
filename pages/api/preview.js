@@ -26,7 +26,7 @@ export default async (req, res) => {
   // res.writeHead(307, { Location: `/posts/${post.slug}` }) /// {`/${tag.slug}/[slug]`}
   const url = `/posts/${post.slug}`
   res.write(
-    `<!DOCTYPE html><html><head><meta http-equiv="Refresh" content="0; url=${url}" />
+    `<!DOCTYPE html><html><head><meta https-equiv="Refresh" content="0; url=${url}" />
     <script>window.location.href = '${url}'</script>
     </head>`
   )
