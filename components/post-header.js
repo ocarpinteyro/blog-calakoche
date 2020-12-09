@@ -28,17 +28,13 @@ function PostFormatDate(dateUpdate) {
 export default function PostHeader({
     title,
     excerpt,
-    coverImage,
     tag,
     imageCoverSource,
     dateUpdate,
 }) {
     return (
         <>
-            <div
-                className="card card-raised card-background col-md-10 ml-auto mr-auto"
-                style={{ backgroundImage: `url(https:${coverImage.url})` }}
-            >
+            <div className="card card-raised card-background col-md-10 ml-auto mr-auto image-cover-back-hack">
                 <div className="card-body">
                     <span className="h6 card-category text-info">{tag.name}</span>
                     <h1 className="card-title">{title}</h1>

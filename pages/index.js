@@ -1,9 +1,9 @@
 import Container from '../components/container'
+import Head from 'next/head'
 import MoreStories from '../components/more-stories'
 import HeroPost from '../components/hero-post'
 import Layout from '../components/layout'
 import { getAllPostsForHome } from '../lib/api'
-import Head from 'next/head'
 import {SITE_DOMAIN, SITE_TITLE_TAB, SITE_AUTHOR, SITE_DESCRIPTION} from '../lib/constants'
 
 export default function Index({ preview, allPosts }) {

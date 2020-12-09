@@ -4,9 +4,9 @@ export default function PostShare({ post }) {
     const textWhatsapp = encodeURIComponent(`${post.title} ${SITE_DOMAIN}/post/${post.slug}`);
     const textTwitter = encodeURIComponent(post.title);
     return (
-        <div className="section section-blog-info">
+        <div className="section section-blog-info share-btns">
             <div className="col-md-8 ml-auto mr-auto">
-                Comparte en:{"  "}
+                ❤️ Comparte en:{"  "}
                 <a
                     href={`https://www.facebook.com/sharer.php?u=${SITE_DOMAIN}/post/${post.slug}`}
                     className="btn btn-social btn-fill btn-facebook"
