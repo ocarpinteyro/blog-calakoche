@@ -1,7 +1,8 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useAmp } from "next/amp";
 
-export const config = { amp: 'hybrid' };
+export const config = { amp: "hybrid" };
 
 export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
     const isAmp = useAmp();
@@ -21,11 +22,18 @@ export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
                                         layout="responsive"
                                     />
                                 ) : (
-                                    <img
-                                        className="img img-raised"
+                                    <Image
                                         src={`https:${coverImage.url}`}
                                         alt={title}
+                                        width={720}
+                                        height={405}
+                                        className="img img-raised"
                                     />
+                                    // <img
+                                    //     className="img img-raised"
+                                    //     src={`https:${coverImage.url}`}
+                                    //     alt={title}
+                                    // />
                                 )}
                             </a>
                         </Link>
