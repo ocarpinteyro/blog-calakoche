@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import LazyLoad from "react-lazyload";
 import { useAmp } from "next/amp";
 
 export const config = { amp: "hybrid" };
@@ -12,7 +12,7 @@ export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
                 <div className="card card-plain card-blog">
                     <div className="card-header card-header-image">
                         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-                            <a>
+                            <a title={title} aria-label={title}>
                                 {isAmp ? (
                                     <amp-img
                                         width="720"
@@ -22,18 +22,13 @@ export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
                                         layout="responsive"
                                     />
                                 ) : (
-                                    <Image
-                                        src={`https:${coverImage.url}`}
-                                        alt={title}
-                                        width={720}
-                                        height={405}
-                                        className="img img-raised"
-                                    />
-                                    // <img
-                                    //     className="img img-raised"
-                                    //     src={`https:${coverImage.url}`}
-                                    //     alt={title}
-                                    // />
+                                    <LazyLoad height={405}>
+                                        <img
+                                            className="img img-raised"
+                                            src={`https:${coverImage.url}`}
+                                            alt={title}
+                                        />
+                                    </LazyLoad>
                                 )}
                             </a>
                         </Link>
