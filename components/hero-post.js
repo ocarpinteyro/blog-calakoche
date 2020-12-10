@@ -12,7 +12,7 @@ export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
                 <div className="card card-plain card-blog">
                     <div className="card-header card-header-image">
                         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-                            <a>
+                            <a title={title} aria-label={title}>
                                 {isAmp ? (
                                     <amp-img
                                         width="720"
@@ -29,11 +29,6 @@ export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
                                         height={405}
                                         className="img img-raised"
                                     />
-                                    // <img
-                                    //     className="img img-raised"
-                                    //     src={`https:${coverImage.url}`}
-                                    //     alt={title}
-                                    // />
                                 )}
                             </a>
                         </Link>
