@@ -18,6 +18,8 @@ mv robots_prod.txt robots.txt
 ls -lsa
 cd ..
 
+bash amp-custom-hack.sh
+
 node sitemap.js
 
 echo -e "\n⚡️ Deploying Project into Firebase"

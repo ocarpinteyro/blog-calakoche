@@ -36,7 +36,7 @@ export default function Footer() {
                     </ul>
                 </nav>
                 <div className="copyright float-right">
-                    © 2020, Calakoche. Todos los derechos reservados.
+                    © 2020 Calakoche™. Todos los derechos reservados.
                 </div>
             </div>
         </footer>
