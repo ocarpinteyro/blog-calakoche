@@ -8,4 +8,9 @@ module.exports = {
         NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_ACCESS_TOKEN:
             process.env.NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_ACCESS_TOKEN,
     },
+    experimental: {
+        amp: {
+            skipValidation: true,
+        },
+    },
 };
