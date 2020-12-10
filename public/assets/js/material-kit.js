@@ -109,52 +109,6 @@ materialKit = {
     });
   },
 
-
-  initColoredShadows: function() {
-    if (materialKit.misc.colored_shadows == true) {
-      if (!(BrowserDetect.browser == 'Explorer' && BrowserDetect.version <= 12)) {
-        $('.card:not([data-colored-shadow="false"]) .card-header-image').each(function() {
-          $card_img = $(this);
-
-          is_on_dark_screen = $(this).closest('.section-dark, .section-image').length;
-
-          // we block the generator of the colored shadows on dark sections, because they are not natural
-          if (is_on_dark_screen == 0) {
-            var img_source = $card_img.find('img').attr('src');
-            var is_rotating = $card_img.closest('.card-rotate').length == 1 ? true : false;
-            var $append_div = $card_img;
-
-            var colored_shadow_div = $('<div class="colored-shadow"/>');
-
-            if (is_rotating) {
-              var card_image_height = $card_img.height();
-              var card_image_width = $card_img.width();
-
-              $(this).find('.back').css({
-                'height': card_image_height + 'px',
-                'width': card_image_width + 'px'
-              });
-              $append_div = $card_img.find('.front');
-            }
-
-            colored_shadow_div.css({
-              'background-image': 'url(' + img_source + ')'
-            }).appendTo($append_div);
-
-            if ($card_img.width() > 700) {
-              colored_shadow_div.addClass('colored-shadow-big');
-            }
-
-            setTimeout(function() {
-              colored_shadow_div.css('opacity', 1);
-            }, 200);
-          }
-
-        });
-      }
-    }
-  },
-
   initRotateCard: debounce(function() {
     $('.rotating-card-container .card-rotate').each(function() {
       var $this = $(this);
@@ -308,9 +262,6 @@ $(document).ready(function() {
 
   //initialise rotating cards
   materialKit.initRotateCard();
-
-  //initialise colored shadow
-  materialKit.initColoredShadows();
 });
 
 $(window).on('resize', function() {
