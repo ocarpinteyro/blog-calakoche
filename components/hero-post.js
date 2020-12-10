@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image";
+import LazyLoad from "react-lazyload";
 import { useAmp } from "next/amp";
 
 export const config = { amp: "hybrid" };
@@ -22,13 +22,13 @@ export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
                                         layout="responsive"
                                     />
                                 ) : (
-                                    <Image
-                                        src={`https:${coverImage.url}`}
-                                        alt={title}
-                                        width={720}
-                                        height={405}
-                                        className="img img-raised"
-                                    />
+                                    <LazyLoad height={405}>
+                                        <img
+                                            className="img img-raised"
+                                            src={`https:${coverImage.url}`}
+                                            alt={title}
+                                        />
+                                    </LazyLoad>
                                 )}
                             </a>
                         </Link>

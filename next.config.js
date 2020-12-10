@@ -8,9 +8,6 @@ module.exports = {
         NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_ACCESS_TOKEN:
             process.env.NEXT_EXAMPLE_CMS_CONTENTFUL_PREVIEW_ACCESS_TOKEN,
     },
-    images: {
-        domains: ["images.ctfassets.net"],
-    },
     experimental: {
         amp: {
             skipValidation: true,
