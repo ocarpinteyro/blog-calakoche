@@ -8476,6 +8476,29 @@ blockquote {
       margin-right: 15px;
       margin-top: -30px;
       border-radius: 6px; }
+
+
+
+  /* @media (min-width: 770px) {
+    .card .card-header.card-header-image {
+      min-height: 399px;}
+  } */
+    @media (max-width: 768px) {
+      .card .card-header.card-header-image {
+        min-height: 170px;} 
+      }
+  @media (min-width: 768px) {
+    .card .card-header.card-header-image {
+      min-height: 241px;} 
+    }
+  @media (min-width: 992px) {
+    .card .card-header.card-header-image {
+      min-height: 331px;}
+     }
+  @media (min-width: 1200px) {
+    .card .card-header.card-header-image {
+      min-height: 399px;} 
+    }
       .card .card-header.card-header-image a {
         display: block; }
       .card .card-header.card-header-image img {
