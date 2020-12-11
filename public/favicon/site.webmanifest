@@ -1,12 +1,12 @@
 {
   "short_name": "Calakoche",
-  "name": "Calakoche Tu Blog",
+  "name": "Calakoche",
   "start_url": "/",
   "background_color": "#FFFFFF",
   "display": "standalone",
   "scope": "/",
   "orientation": "portrait",
-  "theme_color": "#7ACEFC",
+  "theme_color": "#12151c",
   "icons": [
       {
           "src": "/favicon/android-icon-36x36.png",

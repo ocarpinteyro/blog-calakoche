@@ -42,7 +42,13 @@ export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
                                 </a>
                             </Link>
                         </h3>
-                        <h4 className="h5 card-description">{excerpt}</h4>
+                        <h4 className="h5 card-description">
+                            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+                                <a title={title} aria-label={title}>
+                                    {excerpt}
+                                </a>
+                            </Link>
+                        </h4>
                         <Link as={`/posts/${slug}`} href="/posts/[slug]">
                             <a
                                 className="btn btn-primary btn-round"
