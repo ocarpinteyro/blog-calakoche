@@ -8485,7 +8485,7 @@ blockquote {
   } */
     @media (max-width: 768px) {
       .card .card-header.card-header-image {
-        min-height: 170px;} 
+        min-height: 168px;} 
       }
   @media (min-width: 768px) {
     .card .card-header.card-header-image {
