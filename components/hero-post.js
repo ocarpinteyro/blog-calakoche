@@ -22,7 +22,7 @@ export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
                                         layout="responsive"
                                     />
                                 ) : (
-                                    <LazyLoad height={405}>
+                                    <LazyLoad height={177}>
                                         <img
                                             className="img img-raised"
                                             src={`https:${coverImage.url}`}
