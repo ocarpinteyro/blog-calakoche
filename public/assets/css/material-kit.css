@@ -11087,8 +11087,13 @@ html * {
   -moz-osx-font-smoothing: grayscale; }
 
 h1, .h1 {
-  font-size: 3.3125rem;
-  line-height: 1.15em; }
+    line-height: 1.15em; }
+
+@media (min-width: 769px) {
+  h1, .h1 {
+    font-size: 3.3125rem;
+    line-height: 1.15em; }
+}
 
 h2, .h2 {
   font-size: 2.25rem;
@@ -13340,7 +13345,6 @@ thead.thead-inverse th,
   .card.no-shadow .card-header-image,
   .card.no-shadow .card-header-image img {
     box-shadow: none !important; }
-  .card .card-body,
   .card .card-footer {
     padding: 0.9375rem 1.875rem; }
   .card .card-body + .card-footer {
