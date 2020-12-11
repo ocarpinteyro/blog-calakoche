@@ -13,7 +13,7 @@ export default function Layout({ preview, children }) {
         <>
             <Head>
                 <meta charSet="utf-8" />
-                <meta name="theme-color" content="#FFFFFF" />
+                <meta name="theme-color" content="#12151c" />
                 <meta name="HandheldFriendly" content="True" />
                 <meta name="MobileOptimized" content="320" />
                 <meta name="generator" content="Calakoche" />
@@ -55,17 +55,15 @@ export default function Layout({ preview, children }) {
                 <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
                 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
                 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-                <meta name="msapplication-TileColor" content="#ffffff" />
+                <meta name="msapplication-TileColor" content="#12151c" />
                 <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
-                <meta name="theme-color" content="#ffffff" />
                 <meta property="fb:pages" content="951620488359371" />
                 <meta property="twitter:site" content={SITE_TWITTER_OFICIAL} />
                 <meta property="og:site_name" content={SITE_TITLE} />
                 <link rel="manifest" href="/favicon/site.webmanifest" />
                 <link rel="shortcut icon" href="/favicon/favicon.ico" />
-                <meta name="msapplication-TileColor" content="#000000" />
+                <meta name="msapplication-TileColor" content="#12151c" />
                 <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-                <meta name="theme-color" content="#000" />
                 {isAmp ? (
                     <>
                         <link
