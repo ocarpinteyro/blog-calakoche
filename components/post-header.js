@@ -1,26 +1,54 @@
-import Avatar from '../components/avatar'
-import Date from '../components/date'
-import CoverImage from '../components/cover-image'
-import PostTitle from '../components/post-title'
+import moment from "moment";
 
-export default function PostHeader({ title, coverImage, date, author }) {
-  return (
-    <>
-      <PostTitle>{title}</PostTitle>
-      <div className="hidden md:block md:mb-12">
-        {author && <Avatar name={author.name} picture={author.picture} />}
-      </div>
-      <div className="mb-8 md:mb-16 -mx-5 sm:mx-0">
-        <CoverImage title={title} url={coverImage.url} />
-      </div>
-      <div className="max-w-2xl mx-auto">
-        <div className="block md:hidden mb-6">
-          {author && <Avatar name={author.name} picture={author.picture} />}
-        </div>
-        <div className="mb-6 text-lg">
-          <Date dateString={date} />
-        </div>
-      </div>
-    </>
-  )
+function PostFormatDate(dateUpdate) {
+    const MM = {
+        Jan: "enero",
+        Feb: "febrero",
+        Mar: "marzo",
+        Apr: "abril",
+        May: "mayo",
+        Jun: "junio",
+        Jul: "julio",
+        Aug: "agosto",
+        Sep: "septiembre",
+        Oct: "octubre",
+        Nov: "noviembre",
+        Dec: "diciembre",
+    };
+
+    const MMM = moment(dateUpdate).format("MMM");
+    const D = moment(dateUpdate).format("D");
+    const YYYY = moment(dateUpdate).format("YYYY");
+    const LT = moment(dateUpdate).format("LT");
+    const formatedDate = `${D} de ${MM[MMM]} de ${YYYY}, ${LT}`;
+
+    return formatedDate;
+}
+
+export default function PostHeader({
+    title,
+    excerpt,
+    tag,
+    imageCoverSource,
+    dateUpdate,
+}) {
+    return (
+        <>
+            <div className="card card-raised card-background col-md-10 ml-auto mr-auto image-cover-back-hack">
+                <div className="card-body">
+                    <span className="h6 card-category text-info">{tag.name}</span>
+                    <h1 className="card-title">{title}</h1>
+                    <h2 className="h4 card-description card-description-no-opacity">{excerpt}</h2>
+
+                    <span className="card-image-source card-description-no-opacity">
+                        {PostFormatDate(dateUpdate)}
+                    </span>
+                    <span className="card-image-source card-description-no-opacity">
+                        {" ● "}
+                        {imageCoverSource}
+                    </span>
+                </div>
+            </div>
+        </>
+    );
 }

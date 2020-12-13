@@ -28,10 +28,22 @@
         "label": "coverimage"
       }
     },
+    "imageCoverSource": {
+      "type": "Text",
+      "config": {
+        "label": "imageCoverSource"
+      }
+    },
     "date": {
       "type": "Date",
       "config": {
         "label": "date"
+      }
+    },
+    "dateUpdate": {
+      "type": "Date",
+      "config": {
+        "label": "dateUpdate"
       }
     },
     "author": {
@@ -40,6 +52,14 @@
         "select": "document",
         "customtypes": ["author"],
         "label": "author"
+      }
+    },
+    "tag": {
+      "type": "Link",
+      "config": {
+        "select": "document",
+        "customtypes": ["tag"],
+        "label": "tag"
       }
     },
     "uid": {

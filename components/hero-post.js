@@ -1,37 +1,66 @@
-import Link from 'next/link'
-import Avatar from '../components/avatar'
-import Date from '../components/date'
-import CoverImage from '../components/cover-image'
+import Link from "next/link";
+import LazyLoad from "react-lazyload";
+import { useAmp } from "next/amp";
 
-export default function HeroPost({
-  title,
-  coverImage,
-  date,
-  excerpt,
-  author,
-  slug,
-}) {
-  return (
-    <section>
-      <div className="mb-8 md:mb-16">
-        <CoverImage title={title} slug={slug} url={coverImage.url} />
-      </div>
-      <div className="md:grid md:grid-cols-2 md:col-gap-16 lg:col-gap-8 mb-20 md:mb-28">
-        <div>
-          <h3 className="mb-4 text-4xl lg:text-6xl leading-tight">
-            <Link as={`/posts/${slug}`} href="/posts/[slug]">
-              <a className="hover:underline">{title}</a>
-            </Link>
-          </h3>
-          <div className="mb-4 md:mb-0 text-lg">
-            <Date dateString={date} />
-          </div>
+export const config = { amp: "hybrid" };
+
+export default function HeroPost({ title, coverImage, excerpt, slug, tag }) {
+    const isAmp = useAmp();
+    return (
+        <div className="text-center">
+            <div className="col-md-8 ml-auto mr-auto">
+                <div className="card card-plain card-blog">
+                    <div className="card-header card-header-image">
+                        <Link as={`/posts/${slug}`} href="/posts/[slug]">
+                            <a title={title} aria-label={title}>
+                                {isAmp ? (
+                                    <amp-img
+                                        width="720"
+                                        height="405"
+                                        src={`https:${coverImage.url}`}
+                                        alt={title}
+                                        layout="responsive"
+                                    />
+                                ) : (
+                                    <LazyLoad height={177}>
+                                        <img
+                                            className="img img-raised"
+                                            src={`https:${coverImage.url}`}
+                                            alt={title}
+                                        />
+                                    </LazyLoad>
+                                )}
+                            </a>
+                        </Link>
+                    </div>
+                    <div className="card-body">
+                        <span className="h6 card-category text-info">{tag.name}</span>
+                        <h3 className="card-title">
+                            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+                                <a aria-label={title} title={title}>
+                                    {title}
+                                </a>
+                            </Link>
+                        </h3>
+                        <h4 className="h5 card-description">
+                            <Link as={`/posts/${slug}`} href="/posts/[slug]">
+                                <a title={title} aria-label={title}>
+                                    {excerpt}
+                                </a>
+                            </Link>
+                        </h4>
+                        <Link as={`/posts/${slug}`} href="/posts/[slug]">
+                            <a
+                                className="btn btn-primary btn-round"
+                                aria-label="Leer más"
+                                title="Leer más"
+                            >
+                                Leer más
+                            </a>
+                        </Link>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
-          {author && <Avatar name={author.name} picture={author.picture} />}
-        </div>
-      </div>
-    </section>
-  )
+    );
 }
