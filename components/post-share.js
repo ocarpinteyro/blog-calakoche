@@ -12,6 +12,8 @@ export default function PostShare({ post }) {
                     className="btn btn-social btn-fill btn-facebook"
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Comparte en Facebook"
+                    aria-label="Comparte en Facebook"
                 >
                     <i className="fa fa-facebook"></i>
                 </a>
@@ -21,6 +23,8 @@ export default function PostShare({ post }) {
                     className="btn btn-social btn-fill btn-twitter"
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Comparte en Twitter"
+                    aria-label="Comparte en Twitter"
                 >
                     <i className="fa fa-twitter"></i>
                 </a>
@@ -30,6 +34,8 @@ export default function PostShare({ post }) {
                     className="btn btn-social btn-fill btn-whatsapp"
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="Comparte por Whatsapp"
+                    aria-label="Comparte en Whatsapp"
                 >
                     <i className="fa fa-whatsapp"></i>
                 </a>
