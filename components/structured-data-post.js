@@ -1,12 +1,17 @@
-import { SITE_LOGO, SITE_DOMAIN } from '../lib/constants'
+import {
+    SITE_LOGO_PUBLISHER,
+    SITE_LOGO_PUBLISHER_WIDTH,
+    SITE_LOGO_PUBLISHER_HEIGHT,
+    SITE_DOMAIN,
+} from "../lib/constants";
 
 export default function StructuredData({ post }) {
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: `
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: `
           {
             "@context":"https://schema.org/",
             "@type":"NewsArticle",
@@ -26,15 +31,15 @@ export default function StructuredData({ post }) {
               "name":"calakoche.com",
               "logo":{
                 "@type":"ImageObject",
-                "url":"${SITE_LOGO}",
-                "height":400,
-                "width":400
+                "url":"${SITE_LOGO_PUBLISHER}",
+                "height":${SITE_LOGO_PUBLISHER_HEIGHT},
+                "width":${SITE_LOGO_PUBLISHER_WIDTH}
               }
             }
           }
           `,
-        }}
-      />
-    </>
-  );
+                }}
+            />
+        </>
+    );
 }

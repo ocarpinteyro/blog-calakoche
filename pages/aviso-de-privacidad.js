@@ -1,7 +1,13 @@
 import Container from "../components/container";
 import Layout from "../components/layout";
 import Head from "next/head";
-import { SITE_DOMAIN, SITE_TITLE, SITE_AUTHOR, SITE_DESCRIPTION } from "../lib/constants";
+import {
+    SITE_DOMAIN,
+    SITE_TITLE,
+    SITE_AUTHOR,
+    SITE_DESCRIPTION,
+    SITE_OG_IMAGE,
+} from "../lib/constants";
 
 export default function AvisoPrivacidad() {
     const PAGE_TITLE = `Aviso de privacidad | ${SITE_TITLE}`;
@@ -23,14 +29,8 @@ export default function AvisoPrivacidad() {
                     <meta property="og:title" content={PAGE_TITLE} />
                     <meta property="og:type" content="website" />
                     <meta property="og:url" content="https://www.calakoche.com" />
-                    <meta
-                        property="twitter:image"
-                        content="https://calakoche.com/images/social_share.jpg"
-                    />
-                    <meta
-                        property="og:image"
-                        content="https://calakoche.com/images/social_share.jpg"
-                    />
+                    <meta property="twitter:image" content={SITE_OG_IMAGE} />
+                    <meta property="og:image" content={SITE_OG_IMAGE} />
                     <meta property="og:image:width" content="400" />
                     <meta property="og:image:height" content="400" />
                     <link rel="canonical" href={`${SITE_DOMAIN}/aviso-de-privacidad`} />
@@ -83,7 +83,9 @@ export default function AvisoPrivacidad() {
                             no autorizado.
                         </p>
 
-                        <h4 className="title" id="cookies">Cookies</h4>
+                        <h4 className="title" id="cookies">
+                            Cookies
+                        </h4>
 
                         <p>
                             Una cookie se refiere a un fichero que es enviado con la finalidad de
