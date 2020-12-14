@@ -118,6 +118,11 @@ export default function Layout({ preview, children }) {
                             />`,
                             }}
                         />
+                        <script
+                            data-ad-client="ca-pub-2924864838906268"
+                            async
+                            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+                        ></script>
                     </>
                 )}
             </Head>
